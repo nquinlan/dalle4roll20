@@ -2,6 +2,8 @@
 
 This extension allows you to pull DALLE images into Roll 20 VTT.
 
+<img src="https://framerusercontent.com/images/bRjsCV6C2gbKipvWVJ3ItluWY.png" height="16"/> It was originally created as part of [MLH Global Hack Week: AI/MLH Week](https://ghw.mlh.io/events/ai) in [a livestream](https://www.youtube.com/live/mqTZFpFzWZ4?feature=share), you can see the code as it was at [ff0ed29](https://github.com/nquinlan/dalle4roll20/commit/ff0ed298d2a632a53eca89d2d3b89fec89c0c891).
+
 ## Development 
 
 This extension was created with [Extension CLI](https://oss.mobilefirst.me/extension-cli/)!
