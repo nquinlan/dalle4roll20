@@ -1,0 +1,11 @@
+{
+    "appName": {
+        "message": "dalle4roll20"
+    },
+    "appShortName": {
+        "message": "dalle4roll20"
+    },
+    "appDescription": {
+        "message": "This extension allows you to pull DALLE images into Roll 20 VTT."
+    }
+}
