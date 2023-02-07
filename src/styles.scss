@@ -33,8 +33,10 @@
 
 
   .loading span {
-
     animation: loader $loading-animation-duration ease-in-out infinite;
+  }
+
+  h2 span, .loading span {
 
     &:nth-child(1) {
       background-color: #FFFF55;
