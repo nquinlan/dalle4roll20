@@ -37,7 +37,7 @@ const addDalleSearch = () => {
 
 
   let dalleNumberLabel = document.createElement("label");
-  dalleNumberLabel.innerText = "Size:";
+  dalleNumberLabel.innerText = "Number:";
   dalleNumberLabel.classList.add("smallLabel");
 
 
