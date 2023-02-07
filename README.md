@@ -2,7 +2,9 @@
 
 This extension adds a DALL•E 2 "Search" to the Art Library tab of Roll20, allowing you to create assets without leaving the VTT.
 
-<img src="https://framerusercontent.com/images/bRjsCV6C2gbKipvWVJ3ItluWY.png" height="16"/> It was originally created as part of [MLH Global Hack Week: AI/MLH Week](https://ghw.mlh.io/events/ai) in [a livestream](https://www.youtube.com/live/mqTZFpFzWZ4?feature=share), you can see the code as it was at [ff0ed29](https://github.com/nquinlan/dalle4roll20/commit/ff0ed298d2a632a53eca89d2d3b89fec89c0c891).
+![A screenshot of the active extension](/img-demo.jpg?raw=true)
+
+<img src="https://framerusercontent.com/images/bRjsCV6C2gbKipvWVJ3ItluWY.png" height="20"/> It was originally created as part of [MLH Global Hack Week: AI/MLH Week](https://ghw.mlh.io/events/ai) in [a livestream](https://www.youtube.com/live/mqTZFpFzWZ4?feature=share), you can see the code as it was at [ff0ed29](https://github.com/nquinlan/dalle4roll20/commit/ff0ed298d2a632a53eca89d2d3b89fec89c0c891).
 
 _DALL•E images are subject to the [Content Policy](https://labs.openai.com/policies/content-policy) and [Terms of Use](https://openai.com/terms/) of Open AI._
 
