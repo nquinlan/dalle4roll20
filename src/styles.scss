@@ -1,0 +1,159 @@
+#dalle40roll20Container {
+
+  $image-size-small: 50px;
+  $image-hover-offset: 100px;
+  $loading-animation-duration: 1.5s;
+  $loading-animation-tic: $loading-animation-duration * -.1;
+
+  padding-top: 10px;
+  padding-left: 10px;
+  background-color: white;
+  width: 85%;
+
+  h2 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  h2 span, .loading span {
+    float: right;
+    margin-top: 8px;
+    width: 15px;  
+    height: 15px; 
+    display: inline-block;
+
+  }
+
+  .loading, .error {
+    padding: 5px;
+    font-size: 15px;
+    min-height: 30px;
+  }
+
+
+  .loading span {
+
+    animation: loader $loading-animation-duration ease-in-out infinite;
+
+    &:nth-child(1) {
+      background-color: #FFFF55;
+      animation-delay: $loading-animation-tic*0;
+    }
+
+    &:nth-child(2) {
+      background-color: #81FBFD;
+      animation-delay: $loading-animation-tic*1;
+    }
+
+    &:nth-child(3) {
+      background-color: #7BD960;
+      animation-delay: $loading-animation-tic*2;
+    }
+
+    &:nth-child(4) {
+      background-color: #ED774B;
+      animation-delay: $loading-animation-tic*3;
+    }
+
+    &:nth-child(5) {
+      background-color: #3F44F6;
+      animation-delay: $loading-animation-tic*4;
+    }
+  }
+
+  .searchContainer.error {
+    font-size: 12px;
+
+    h3 {
+      font-size: 15px;
+      margin: 2px 0;
+    }
+  }
+
+  @keyframes loader {
+    0% {
+      width: 20px;
+      height: 20px;
+    }
+    50%, 100% {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  label {
+    font-weight: bold;
+
+    input, select {
+      font-weight: normal;
+      margin-left: 5px;
+    }
+
+    &.smallLabel {
+      display: inline-block;
+      margin-right: 5px;
+
+      select {
+        width: 90px;
+      }
+    }
+  }
+
+  .searchContainer {
+    list-style: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0;
+    margin: 2px 0;
+
+    &:hover li {
+      position: relative;
+      top: 0;
+    }
+
+    li {
+      list-style: none;
+      display: block;
+      float: left;
+      margin: 0px;
+      padding: 5px;
+      width: $image-size-small;
+      height: $image-size-small;
+      cursor: pointer;
+    }
+
+    img {
+      position: relative;
+      width: 100%;
+    }
+
+    li:hover {
+
+      img {
+
+        position: fixed;
+        z-index: 100;
+        
+        &.full-256x256 {
+          $image-size-hover: 256px;
+          margin-left: -1 * ($image-size-hover - $image-size-small) - $image-hover-offset;
+          width: $image-size-hover;
+        }
+        &.full-512x512 {
+          $image-size-hover: 512px;
+          margin-left: -1 * ($image-size-hover - $image-size-small) - $image-hover-offset;
+          width: $image-size-hover;
+        }
+        &.full-1024x1024 {
+          $image-size-hover: 1024px;
+          margin-left: -1 * ($image-size-hover - $image-size-small) - $image-hover-offset;
+          width: $image-size-hover;
+        }
+      }
+
+    }
+
+  }
+
+}

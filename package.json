@@ -2,11 +2,11 @@
     "name": "dalle4roll20",
     "description": "This extension allows you to pull DALLE images into Roll 20 VTT.",
     "version": "0.0.1",
-    "homepage": "http://chrome.google.com/webstore",
-    "author": "ENTER YOUR NAME HERE",
+    "homepage": "https://github.com/nquinlan/dalle4roll20",
+    "author": "Nick Quinlan",
     "repository": {
         "type": "git",
-        "url": "ENTER GIT REPO URL"
+        "url": "https://github.com/nquinlan/dalle4roll20.git"
     },
     "scripts": {
         "start": "xt-build -e dev -w",
@@ -39,10 +39,22 @@
         }
     },
     "xtbuild": {
+        "scss_bundles": [
+            {
+                "name": "content-style",
+                "src": [
+                  "./src/styles.scss"
+                ]
+            }
+        ],
         "js_bundles": [
             {
                 "name": "content-script",
-                "src": "./src/content-scripts/*.js"
+                "src": "./src/content.js"
+            },
+            {
+                "name": "background-script",
+                "src": "./src/background.js"
             }
         ]
     },
