@@ -125,6 +125,16 @@
       cursor: pointer;
     }
 
+    li.prompt {
+      display: block;
+      float: none;
+      padding: 2px 5px 0;
+      color: #aaa;
+      font-style: italic;
+      cursor: auto;
+      width: 100%;
+    }
+
     img {
       position: relative;
       width: 100%;

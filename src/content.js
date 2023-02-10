@@ -84,12 +84,14 @@ const addDalleSearch = () => {
     searchContainer.innerHTML = "Loading… <span></span><span></span><span></span><span></span><span></span>";
     searchResults.prepend(searchContainer);
 
+    const prompt = dalleSearch.value;
+
     const configuration = new Configuration({
       apiKey: apiKey.value,
     });
     const openai = new OpenAIApi(configuration);
     const response = openai.createImage({
-      prompt: dalleSearch.value,
+      prompt: prompt,
       n: Number(dalleNumber.value),
       size: dalleSize.value,
     }).then(response => {
@@ -98,6 +100,12 @@ const addDalleSearch = () => {
 
       searchContainer.innerHTML = "";
       searchContainer.classList.remove("loading");
+
+      let promptDisplay = document.createElement("li");
+      promptDisplay.classList.add("prompt");
+      promptDisplay.innerText = prompt;
+
+      searchContainer.append(promptDisplay);
 
       response.data.data.map((generation) => {
 
