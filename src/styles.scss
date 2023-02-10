@@ -136,21 +136,24 @@
 
         position: fixed;
         z-index: 100;
+        width: auto;
+        max-height: 80vh;
         
         &.full-256x256 {
           $image-size-hover: 256px;
           margin-left: -1 * ($image-size-hover - $image-size-small) - $image-hover-offset;
-          width: $image-size-hover;
+          max-width: $image-size-hover;
         }
         &.full-512x512 {
           $image-size-hover: 512px;
           margin-left: -1 * ($image-size-hover - $image-size-small) - $image-hover-offset;
-          width: $image-size-hover;
+          max-width: $image-size-hover;
         }
         &.full-1024x1024 {
           $image-size-hover: 1024px;
           margin-left: -1 * ($image-size-hover - $image-size-small) - $image-hover-offset;
-          width: $image-size-hover;
+          max-width: $image-size-hover;
+          top: 50px;
         }
       }
 
